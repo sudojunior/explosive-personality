@@ -1,0 +1,11 @@
+{
+  "name": "explosive-personality",
+  "title": "Explosive Personality",
+  "version": "0.0.1",
+  "author": "sudojunior",
+  "factorio_version": "2.0",
+  "dependencies": [
+    "base >= 2.0"
+  ],
+  "description": "As if it wasn't hard enough to defend your factory."
+}

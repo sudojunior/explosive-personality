@@ -1,0 +1,9 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2025-11-02
+  Features:
+    - Creates a countdown from 1 hour upon map creation.
+    - After is selected to die, the countdown resets between 50 and 70 minutes, by the minute - accuracy with randomness may improve when custom countdown ranges are implmenented.
+  Balancing:
+    - The countdown timer should not advance unless there is a valid player character to select.
+    - If the first player to join a server has less than 5 minutes left on the countdown, it will advance to 5 minutes and no further.
