@@ -39,7 +39,7 @@ script.on_event(defines.events.on_tick, function(event)
 
   storage.time_until_event = storage.time_until_event - 1
 
-  if storage.time_until_event > 0 then return end
+  if storage.time_until_event >= 0 then return end
   reset_event_time() -- prevent further attempts on future frames
   -- event trigger
   local valid_players = game.connected_players
