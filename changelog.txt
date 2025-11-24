@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 2025-11-24
+  Bugfixes:
+    - Patch event target to use the physical_* alternatives - position and surface
+    - Patch event interval to occur as the timer runs to zero
+    - Refactor death event to use the player themselves as the cause
+---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 2025-11-02
   Features:
