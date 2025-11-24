@@ -58,16 +58,12 @@ script.on_event(defines.events.on_tick, function(event)
     return
   end
 
-  local entity = random_player.physical_surface.create_entity {
+  random_player.physical_surface.create_entity {
     name = "artillery-projectile",
     position = random_player.physical_position,
     target = random_player.physical_position,
     force = "neutral"
   }
 
-  if entity ~= nil then
-    random_player.character.die("neutral", entity)
-  else
-    random_player.character.die("neutral")
-  end
+  random_player.character.die("neutral", random_player.character)
 end)
