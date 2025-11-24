@@ -58,10 +58,10 @@ script.on_event(defines.events.on_tick, function(event)
     return
   end
 
-  local entity = random_player.surface.create_entity {
+  local entity = random_player.physical_surface.create_entity {
     name = "artillery-projectile",
-    position = random_player.position,
-    target = random_player.position,
+    position = random_player.physical_position,
+    target = random_player.physical_position,
     force = "neutral"
   }
 
